@@ -235,13 +235,16 @@ export const openOverlayPermissionActivity = async(): Promise<void> => {
 }
 
 export const onPositionChange = (callback: (position: { x: number, y: number }) => void): () => void => {
-  const eventEmitter = new NativeEventEmitter(LyricModule)
-  const eventListener = eventEmitter.addListener('set-position', event => {
-    callback(event)
-  })
 
-  return () => {
-    eventListener.remove()
-  }
+  // todo ios support
+  // const eventEmitter = new NativeEventEmitter(LyricModule)
+  // const eventListener = eventEmitter.addListener('set-position', event => {
+  //   callback(event)
+  // })
+
+  // return () => {
+  //   eventListener.remove()
+  // }
+  return () => {}
 }
 

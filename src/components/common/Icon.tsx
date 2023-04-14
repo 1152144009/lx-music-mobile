@@ -19,8 +19,8 @@ import { useTheme } from '@/store/theme/hook'
 // import IconZocial from 'react-native-vector-icons/Zocial'
 // import IconSimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
 
-
-const IcoMoon = createIconSetFromIcoMoon(icoMoonConfig)
+// todo: icoMoonConfig
+// const IcoMoon = createIconSetFromIcoMoon(icoMoonConfig)
 
 
 // https://oblador.github.io/react-native-vector-icons/
@@ -28,8 +28,9 @@ const IcoMoon = createIconSetFromIcoMoon(icoMoonConfig)
 type IconType = ReturnType<typeof createIconSetFromIcoMoon>
 
 export const Icon = ({ size = 15, color, ...props }: ComponentProps<IconType>) => {
-  const theme = useTheme()
-  return <IcoMoon size={scaleSizeW(size)} color={color ?? theme['c-font']} {...props} />
+  // const theme = useTheme()
+  // return <IcoMoon size={scaleSizeW(size)} color={color ?? theme['c-font']} {...props} />
+  return <div/>
 }
 
 export {
