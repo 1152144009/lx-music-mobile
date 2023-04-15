@@ -14,6 +14,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-LxMusicMobile-LxMusicMobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-LxMusicMobile-LxMusicMobileTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		AE2901D329E934E400EC9192 /* UtilsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2901D229E934E400EC9192 /* UtilsModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-LxMusicMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LxMusicMobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LxMusicMobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-LxMusicMobile-LxMusicMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LxMusicMobile-LxMusicMobileTests.release.xcconfig"; path = "Target Support Files/Pods-LxMusicMobile-LxMusicMobileTests/Pods-LxMusicMobile-LxMusicMobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		AE2901D129E934E400EC9192 /* UtilsModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsModule.h; sourceTree = "<group>"; };
+		AE2901D229E934E400EC9192 /* UtilsModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtilsModule.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,6 +89,7 @@
 		13B07FAE1A68108700A75B9A /* LxMusicMobile */ = {
 			isa = PBXGroup;
 			children = (
+				AE2901C829E933A900EC9192 /* bridge */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -135,6 +139,48 @@
 				00E356EE1AD99517003FC87E /* LxMusicMobileTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AE2901C829E933A900EC9192 /* bridge */ = {
+			isa = PBXGroup;
+			children = (
+				AE2901C929E933A900EC9192 /* cache */,
+				AE2901CC29E933A900EC9192 /* lyric */,
+				AE2901CD29E933A900EC9192 /* gzip */,
+				AE2901CE29E933A900EC9192 /* utils */,
+			);
+			name = bridge;
+			path = LxMusicMobile/bridge;
+			sourceTree = "<group>";
+		};
+		AE2901C929E933A900EC9192 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		AE2901CC29E933A900EC9192 /* lyric */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lyric;
+			sourceTree = "<group>";
+		};
+		AE2901CD29E933A900EC9192 /* gzip */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = gzip;
+			sourceTree = "<group>";
+		};
+		AE2901CE29E933A900EC9192 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				AE2901D129E934E400EC9192 /* UtilsModule.h */,
+				AE2901D229E934E400EC9192 /* UtilsModule.m */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -413,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				AE2901D329E934E400EC9192 /* UtilsModule.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
